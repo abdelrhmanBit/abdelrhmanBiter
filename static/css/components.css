@@ -215,6 +215,8 @@ header nav ul.open li:nth-child(4){ animation-delay: 0.18s; }
         width: auto;
         display: block;
         filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
+        /* إضافة المسار للوجو */
+        content: url('../assets/images/logo.png');
     }
 }
 
@@ -703,69 +705,3 @@ input[type = "submit"]:hover {
     background-color: #ffebee;
     border: 1px solid #ffcdd2;
     border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
-    z-index: 1;
-    position: relative;
-}
-
-.error-message p {
-    color: #c62828;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 500;
-}
-
-.error-message i {
-    color: #f44336;
-    font-size: 18px;
-}
-
-@media (max-width: 768px) {
-    .route-summary {
-        gap: 15px;
-    }
-    
-    .route-summary span {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
-    
-    .segment-info {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        text-align: right;
-    }
-    
-    .transport-info {
-        justify-content: center;
-        min-width: auto;
-    }
-    
-    .segment-stats {
-        text-align: center;
-        min-width: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .route-header h3 {
-        font-size: 18px;
-    }
-    
-    .route-summary {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .segment-info {
-        padding: 15px 20px;
-    }
-    
-    .route-results {
-        margin-top: 20px;
-    }
-}
-/* end result */
